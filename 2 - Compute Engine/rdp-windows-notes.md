@@ -13,7 +13,7 @@ In this hands-on lab, you learn how to launch a Windows Server instance in Compu
 
 #In Cloud Shell
 
-```console
+```bash
 gcloud compute instances get-serial-port-output instance-1 #check OS have initialized or not
 gcloud compute reset-windows-password [instance] --zone us-central1-a --user [username] #set password for logging. username: admin
 ```
