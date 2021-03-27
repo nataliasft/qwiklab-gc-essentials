@@ -23,15 +23,13 @@ gcloud compute project-info describe --project <project ID>
 export PROJECT_ID=<project ID>
 ```
 
-1. Store Zone
+2. Store Zone
 
 ```bash
 export ZONE=<zone>
 ```
 
 ### Create virtual machine with gcloud
-
-1. In cloud shell
 
 ```bash
 gcloud compute instances create gcelab2 --machine-type n1-standard-2 --zone $ZONE
