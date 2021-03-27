@@ -1,4 +1,4 @@
-# Task 1: Configure your environment
+## Task 1: Configure your environment
 
 To see what your default region and zone settings are,
 
@@ -33,4 +33,24 @@ export ZONE=<zone>
 
 ```bash
 gcloud compute instances create gcelab2 --machine-type n1-standard-2 --zone $ZONE
+```
+
+## Task 2: Install a new component
+
+1. Install beta components
+
+```bash
+sudo apt-get install google-cloud-sdk
+```
+
+2. Enable gcloud interactive mode
+
+````bash
+gcloud beta interactive```
+````
+
+## Task 3: Connect to your VM instance with SSH
+
+```bash
+gcloud compute ssh gcelab2 --zone $ZONE
 ```
