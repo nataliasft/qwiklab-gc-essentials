@@ -1,0 +1,1 @@
+This repo contains notes for Qwiklabs Google Cloud Essentials Quest.
