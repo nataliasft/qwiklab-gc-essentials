@@ -13,25 +13,25 @@ Google Kubernetes Engine (GKE) clusters are powered by the Kubernetes open sourc
 - Node auto-repair to maintain node health and availability
 - Logging and Monitoring with Cloud Monitoring for visibility
 
-#### Set default compute zone
+### Set default compute zone
 
 ```bash
 gcloud config set compute/zone us-central1-a
 ```
 
-#### Create GKE cluster
+### Create GKE cluster
 
 ```bash
 gcloud container clusters create [cluster-name]
 ```
 
-#### Get auth credentials for the cluster
+### Get auth credentials for the cluster
 
 ```bash
 gcloud container clusters get-credentials [cluster-name]
 ```
 
-#### Deploy app to cluster
+### Deploy app to cluster
 
 1. Create new deployment hello server from hello-app container image
 
@@ -51,7 +51,7 @@ kubectl expose deployment hello-server --type=LoadBalancer --port 8080
 kubectl get service
 ```
 
-#### Delete the cluster
+### Delete the cluster
 
 ```bash
 gcloud container clusters delete [cluster-name]
